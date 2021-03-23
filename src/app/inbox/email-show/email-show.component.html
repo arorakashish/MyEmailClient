@@ -7,5 +7,10 @@
     <div>
       To: <i>{{ email.to }}</i>
     </div>
+    <div class="ui divider"></div>
+    <div>
+      Subject: <i>{{ email.subject }}</i>
+    </div>
+    <div [innerHTML]="email.html"></div>
   </div>
 </div>
