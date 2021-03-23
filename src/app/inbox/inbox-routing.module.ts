@@ -4,6 +4,7 @@ import { EmailShowComponent } from "./email-show/email-show.component";
 
 import { HomeComponent } from "./home/home.component";
 import { PlaceholderComponent } from "./placeholder/placeholder.component";
+import { EmailResolverService } from "./email-resolver.service";
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
       {
         path: ":id",
         component: EmailShowComponent,
+        resolve: {
+          email: EmailResolverService,
+        },
       },
       {
         path: "",
