@@ -10,7 +10,7 @@ interface EmailSummary {
   providedIn: "root",
 })
 export class EmailService {
-  rootUrl = "https://api.angilar-email.com";
+  rootUrl = "https://api.angular-email.com";
 
   constructor(private http: HttpClient) {}
 
